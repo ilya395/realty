@@ -1,0 +1,132 @@
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./sass/main.scss ***!
+  \**********************************************************************************************************************************************************************************/
+html {
+  font-size: 62.5%; }
+
+.body {
+  font-size: 1.6rem; }
+
+html, .body, .work-area {
+  width: 100%;
+  height: 100%; }
+
+.work-area {
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.main-section {
+  width: 100%;
+  height: auto;
+  flex-grow: 1; }
+
+.main-section_all-height {
+  height: 100%; }
+
+.login-section {
+  height: 100%;
+  display: flex;
+  align-items: center; }
+
+.login-section > .row {
+  width: 100%; }
+
+.header-section .header-section__col {
+  padding: 20px 0; }
+
+.navigation {
+  background-color: #f5f5f5; }
+
+.nav-content {
+  display: inline; }
+
+.table-section__buttons-cell {
+  display: flex;
+  justify-content: flex-end; }
+
+.table-section__buttons-cell > button > i {
+  pointer-events: none; }
+
+.table-section__buttons-cell > button:last-child {
+  margin-left: 10px; }
+
+.btn-floating.btn-floating_custom {
+  position: fixed;
+  top: auto;
+  right: 50px;
+  bottom: 50px;
+  left: auto;
+  z-index: 10; }
+
+.footer {
+  padding: 25px 0; }
+
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./js/component/Modal/Modal.component.scss ***!
+  \***********************************************************************************************************************************************************************************************************/
+.modal-container {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .modal-container .modal {
+    display: block;
+    position: relative;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1.5rem; }
+    @media screen and (max-width: 50rem) {
+      .modal-container .modal {
+        width: 100%; } }
+    @media screen and (min-width: 50rem) {
+      .modal-container .modal {
+        width: 50rem; } }
+    .modal-container .modal .modal__close-btn {
+      position: absolute;
+      z-index: 101;
+      display: flex;
+      width: 2rem;
+      height: 2rem;
+      top: 1.5rem;
+      right: 1.5rem;
+      cursor: pointer; }
+      .modal-container .modal .modal__close-btn:after, .modal-container .modal .modal__close-btn:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: auto;
+        width: 2rem;
+        background-color: #000;
+        height: 0.1rem;
+        transform: rotate(45deg); }
+      .modal-container .modal .modal__close-btn:before {
+        transform: rotate(-45deg); }
+    .modal-container .modal__title {
+      text-align: center;
+      margin-bottom: 1.5rem; }
+    .modal-container .modal__footer {
+      margin-top: 1.5rem; }
+
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./js/component/Object-form/ObjectForm.component.scss ***!
+  \**********************************************************************************************************************************************************************************************************************/
+form[name="form"] select[name="status"] {
+  display: block;
+  height: 3rem;
+  width: 100%;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  padding: 0;
+  outline: none; }
+
+
+/*# sourceMappingURL=main.css.map*/

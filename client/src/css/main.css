@@ -1,0 +1,60 @@
+html, .body, .work-area {
+  width: 100%;
+  height: 100%;
+}
+.work-area {
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-section {
+  width: 100%;
+  height: auto;
+  flex-grow: 1;
+}
+.main-section_all-height {
+  height: 100%;
+}
+.login-section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.login-section > .row {
+  width: 100%;
+}
+
+.header-section .header-section__col {
+  padding: 20px 0;
+}
+
+.navigation {
+  background-color: #f5f5f5;
+}
+.nav-content {
+  display: inline;
+}
+
+.table-section__buttons-cell {
+  display: flex;
+  justify-content: flex-end;
+}
+.table-section__buttons-cell > button:last-child {
+  margin-left: 10px;
+}
+
+.btn-floating.btn-floating_custom {
+  position: fixed;
+  top: auto;
+  right: 50px;
+  bottom: 50px;
+  left: auto;
+  z-index: 10;
+}
+
+.footer {
+  padding: 25px 0;
+}

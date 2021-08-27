@@ -1,0 +1,77 @@
+<header class="header-section">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 header-section__col">
+        {{!-- <nav class="navigation">
+          <div class="nav-wrapper hide-on-med-and-down">
+            <button class="waves-effect waves-light btn right">Logout</button>
+          </div>
+        </nav> --}}
+        <div class="nav-content">
+          <span>
+            Hi, manager!
+          </span>
+        </div>
+        <button class="waves-effect waves-light btn right" id="logout">Logout</button>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="main-section">
+  <section class="table-section container">
+    <div class="row">
+      <div class="col s12">
+      {{#if visible}}
+        <table class="responsive-table">
+          <thead>
+            <tr>
+                <th>Number</th>
+                <th>Square, m<sup>2</sup></th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+          </thead>
+
+          <tbody id="table-body">
+
+
+          {{#each objects}}
+            <tr data-row="{{this.id}}">
+              <td>{{this.number}}</td>
+              <td>{{this.square}}</td>
+              <td>{{this.status}}</td>
+              <td class="table-section__buttons-cell">
+                <button class="waves-effect waves-light btn" data-object="edit" data-id="{{this.id}}">
+                  <i class="material-icons">edit</i>
+                </button>
+                <button class="waves-effect waves-light btn" data-object="delete" data-id="{{this.id}}">
+                  <i class="material-icons">delete</i>
+                </button>
+              </td>
+            </tr>
+          {{/each}}
+
+          </tbody>
+        </table>
+      {{else}}
+        <p> Нет данных</p>
+      {{/if}}
+      </div>
+    </div>
+  </section>
+</main>
+<a class="btn-floating btn-floating_custom btn-large waves-effect waves-light red" id="add-new-object"><i class="material-icons">add</i></a>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="footer-copyright">
+          <div class="">
+          © 2014 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

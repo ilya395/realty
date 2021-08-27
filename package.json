@@ -1,0 +1,36 @@
+{
+  "name": "realty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server-start": "concurrently \"npm run ui-start\" \"nodemon index.js\"",
+    "server-dev": "concurrently \"npm run ui-dev\" \"nodemon index.js\"",
+    "start": "node index.js",
+    "ui-start": "npm run start --prefix client",
+    "ui-dev": "npm run dev --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@telegraf/session": "^1.0.1",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "express-session": "^1.17.2",
+    "hbs": "^4.1.2",
+    "nodemailer": "^6.6.3",
+    "nodemon": "^2.0.7",
+    "pg": "^8.6.0",
+    "validator": "^13.6.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "concurrently": "^6.2.1"
+  }
+}
